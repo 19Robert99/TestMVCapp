@@ -19,8 +19,8 @@ public class DBConnect {
         String host = "localhost";
         int port = 1521;
         String sid = "XE";
-        String user = "system";
-        String pwd = "robert";
+        String user = "robert";
+        String pwd = "p1234";
 
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");

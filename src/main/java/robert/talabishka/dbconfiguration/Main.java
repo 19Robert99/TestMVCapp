@@ -13,9 +13,9 @@ public class Main {
         Locale.setDefault(Locale.ENGLISH);
 
         DBConnect dbConnect = new DBConnect();
-        ResultSet resultSet = dbConnect.getResult("select * from location");
+        ResultSet resultSet = dbConnect.getResult("select * from Users");
         while (resultSet.next()){
-            System.out.println(resultSet.getString(1));
+            System.out.println(resultSet.getString(2));
         }
         resultSet.close();
         dbConnect.close();
